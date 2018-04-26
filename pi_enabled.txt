@@ -1,0 +1,118 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 107/166   #P:1
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+           <...>-317   [000] ...1   372.616845: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   372.617011: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   372.617152: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-317   [000] ...1   372.617296: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   372.617391: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   372.617525: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-319   [000] ...1   372.663565: tracing_mark_write: APERIDIC
+           <...>-318   [000] ...1   372.716842: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   372.717010: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.717147: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.717288: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.717424: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.717550: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.717682: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.916851: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   372.917020: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.917158: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.917299: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.917434: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.917560: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.917692: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.917826: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   372.917922: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.918052: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.918192: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.918368: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   372.918497: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   372.918629: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-319   [000] ...1   372.919516: tracing_mark_write: APERIDIC
+           <...>-317   [000] ...1   373.116919: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   373.117090: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   373.117231: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.117426: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.117541: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.117672: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.117813: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.117946: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.118072: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.118204: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-319   [000] ...1   373.143549: tracing_mark_write: APERIDIC
+           <...>-319   [000] ...1   373.279583: tracing_mark_write: APERIDIC
+           <...>-318   [000] ...1   373.316860: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.317028: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.317166: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.317306: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.317441: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.317568: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.317700: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-319   [000] ...1   373.423566: tracing_mark_write: APERIDIC
+           <...>-318   [000] ...1   373.516868: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.517037: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.517175: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.517315: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.517451: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.517577: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.517708: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-317   [000] ...1   373.616866: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   373.617034: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   373.617175: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-317   [000] ...1   373.617326: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   373.617423: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   373.617556: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.716869: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.717037: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.717175: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.717316: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.717450: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.717577: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.717708: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.916877: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.917058: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.917198: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.917339: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.917474: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.917599: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.917731: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.917865: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   373.917961: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.918091: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.918232: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.918409: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   373.918537: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   373.918670: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-317   [000] ...1   374.116892: tracing_mark_write: PERIODIC
+           <...>-317   [000] ...1   374.117061: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-317   [000] ...1   374.117201: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.117396: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   374.117511: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.117642: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.117783: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.117916: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.118041: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.118173: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.316888: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   374.317058: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.317196: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.317337: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.317471: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.317597: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.317729: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.516887: tracing_mark_write: PERIODIC
+           <...>-318   [000] ...1   374.517057: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.517196: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.517336: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.517471: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-318   [000] ...1   374.517597: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-318   [000] ...1   374.517729: tracing_mark_write: UNLOCKING MUTEX IN PER

@@ -1,6 +1,6 @@
-User space program to control event handling and signaling
+User space program Real-time task models
 
-   Following project is used to control event handling and signaling.
+   Following project is used to create real time task models(periodic,aperiodic threads).
 
 Getting Started
 
@@ -14,29 +14,60 @@ Prerequisites
 
 Installing
 
-Download zip file cse438-team20-assgn04.zip and unzip in user directory on your machine running linux distribution and you will get the following folders.
+Download below files in user directory on your machine running linux distribution.
 
+   1)rtes1.c
+   2)Makefile
+   3)report.pdf
+   4)README.md
+	
 
+Ensure that 666(rw- rw- rw-) file permissions exist for /dev/input/event2.
 
-1)Task_1
-2)Task_2
-3)Task_3
+you can check by the following command 
+ls -lrt /dev/input/event2. 
 
+else change using
+sudo chmod 666 /dev/input/event2
 
-Deployment for Task_1
+Deployment
+   TO RUN ON THE HOST
+   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
+
+   Use below commands to compile :
+
+   1] Run “make” command to compile rtes1.c 
+
+   2] If there is no error then a object file under the name rtes1 will be created. 
+
+   3] Now run the object file using the command “./rtes1”
+   
+   TO RUN ON GALILEO BOARD
 
    Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
 
+   In the make file we gave the path as "/opt/iot-devkit/1.7.2/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux" for compiler
+
+   if you have a different location then change it.
+   
    Use below command to to compile 
  
-   make
+   make TEST_TARGET=Galileo2
+
+   Now send the object file to the galileo
+   board using the follwing command (change IP & home
+   accordingly)
+
+   sudo scp rtes1 root@192.168.0.100:/home
+
+   Connect to Galileo board with root login
 
    Mouse events are detected through /dev/input/eventX device
-   file. Here header is written for /dev/input/event4 file
-   Check on which file on your board & change in task1.c
+   file. Here header is written for /dev/input/event2 file
+   Check on which file on your board & change in rtes1.c
    accordingly.
 
-   On Host, ensure that 666(rw- rw- rw-) file
+   On Galileo2 board, ensure that 666(rw- rw- rw-) file
    permissions exist for /dev/input/event2.
 
    You can check by the following command 
@@ -45,114 +76,18 @@ Deployment for Task_1
    Otherwise change using the following command 
    chmod 666 /dev/input/event2
 
-   Once above completed then run the below command to execute
-   the program code
-   
-   ./task1
-
-Expected results
-
-   prints the time after for every one second and terminates after 60 seconds if no mouse event is detected
-   and if a double click occurs under 60 seconds it terminates the program
-
-
-Deployment for Task2_1
-
-   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
-
-   Use below command to to compile 
- 
-   make
 
    Once above completed then run the below command to execute
    the program code
    
-  sudo ./task2_1
+   cd /home
+   ./rtes1
+
 
 Expected results
 
-    main thread's priority , scheduling policy is set and a thread is created 
-    whose priority is set lower than that of the main thread now a signal is generated in 
-    main thread which will happen only after the main thread completes its process and then kills the runnable 
-    thread 
-     
-   
-Deployment for Task2_2
-
-   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
-
-   Use below command to to compile 
- 
-   make
-
-   
-   Once above completed then run the below command to execute
-   the program code
-   
-   ./task2_2
-
-Expected results
-   
-   A thread is a created and a semaphore is intialized, now when the  signal is sent the thread it is killed and program exits.
-
-
-Deployment for Task2_3
-
-   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
-
-   Use below command to to compile 
- 
-   make
-
-   Once above completed then run the below command to execute
-   the program code
-   
-   ./task2_3
-
-Expected results
-
-  A thread is created and nanaosleep is given , now when the signal is sent to the thread it is killed and program exits.
-
-   
-Deployment for Task3_1
-
-   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
-
-   Use below command to to compile 
- 
-   make
-
-   Once above completed then run the below command to execute
-   the program code
-   
-   ./task3_1
-
-Expected results
-
-  Intially five threads are created , Now a signal is generated which is sent  one of the five threads
-  randomly and kills it.
-
-	
- 
-Deployment for Task3_2
-
-   Open the terminal & go to directory where files in installing part have been downloaded. [cd <Directory name>] 
-
-   Use below command to to compile 
- 
-   make
-
-   Once above completed then run the below command to execute
-   the program code
-   
-   ./task3_2
-
-Expected results
-
+   It asks for whether priority inheritence should be enabled or disabled enter 0 for enabling and 1 vice-versa, now based upon the input text file it creates a number of periodic and aperiodic threads    	and runs them for the given execution time. 
   
-  Intially five threads are created out of which three are unblocked and two are blocked, 
-  also the main thread is blocked, Now on arrival of the signal one of the unblocked thread
-  is picked up randomly and killed after which remaining two unblocked threads are killed
 
 Built With
 
@@ -162,7 +97,7 @@ Built With
 
 Authors
 
-Sarvesh Patil 
+Nisarg trivedi
 Nagarjun chinnari 
 
 License

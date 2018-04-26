@@ -1,0 +1,98 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 87/323   #P:1
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+           <...>-332   [000] ...1   619.124013: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   619.124157: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.124353: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.124467: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.124598: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.124739: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.124871: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.124999: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.125132: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.323829: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.323998: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.324135: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.324278: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.324410: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.324538: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.324670: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.523829: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.523999: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.524135: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.524277: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.524410: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.524536: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.524669: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-332   [000] ...1   619.623836: tracing_mark_write: PERIODIC
+           <...>-332   [000] ...1   619.624004: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   619.624147: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-332   [000] ...1   619.624291: tracing_mark_write: PERIODIC
+           <...>-332   [000] ...1   619.624387: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   619.624525: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.723839: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.724019: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.724157: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.724299: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.724431: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.724558: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.724691: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.923844: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.924014: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.924150: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.924292: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.924424: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.924552: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.924685: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.924820: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   619.924916: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.925046: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.925190: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.925363: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   619.925494: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   619.925628: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-332   [000] ...1   620.123862: tracing_mark_write: PERIODIC
+           <...>-332   [000] ...1   620.124031: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   620.124175: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.124369: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   620.124483: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.124614: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.124756: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.124888: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.125016: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.125156: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.323851: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   620.324021: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.324158: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.324300: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.324433: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.324560: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.324692: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.523858: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   620.524027: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.524163: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.524306: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.524438: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.524565: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.524699: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-332   [000] ...1   620.623864: tracing_mark_write: PERIODIC
+           <...>-332   [000] ...1   620.624031: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   620.624174: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-332   [000] ...1   620.624319: tracing_mark_write: PERIODIC
+           <...>-332   [000] ...1   620.624416: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-332   [000] ...1   620.624554: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.723865: tracing_mark_write: PERIODIC
+           <...>-333   [000] ...1   620.724033: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.724169: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.724312: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.724443: tracing_mark_write: LOCKING MUTEX IN AER
+           <...>-333   [000] ...1   620.724571: tracing_mark_write: UNLOCKING MUTEX IN PER
+           <...>-333   [000] ...1   620.724704: tracing_mark_write: UNLOCKING MUTEX IN PER
