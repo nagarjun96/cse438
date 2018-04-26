@@ -1,4 +1,4 @@
-User space program to generate animation on LED matrix using ultrasonic sensor
+Kernel space program to generate animation on LED matrix using ultrasonic sensor
 
    Following project is used to generate animation on LED matrix using ultrasonic sensor .
 
